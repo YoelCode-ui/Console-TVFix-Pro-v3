@@ -103,7 +103,7 @@ Once the license is placed in the application's data directory, all features wil
 
 For licensing, technical support, or feature requests, contact the developer:
 
-- **Yoel Romero H.**
+- **Yoel Romero H.** – 5356113984
 - **YouTube**: [@yoelcode](https://www.youtube.com/@yoelcode)
 - **GitHub**: [YoelCode‑ui](https://github.com/YoelCode-ui)
 
