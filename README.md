@@ -2,7 +2,7 @@
 
 **Console TVFix Pro** is a premium, cross-platform application designed for advanced communication with Smart TVs via serial interfaces. It offers a powerful terminal environment, extensive command libraries for various TV chipset technologies, and robust security features, all within a modern, easy-to-use interface.
 
-![User Interface](screenshot.jpg)
+![User Interface](screenshot.png)
 
 > **Note**: This repository is **private**. The source code is not publicly available. This document describes the application's capabilities and usage.
 
