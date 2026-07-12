@@ -8,7 +8,7 @@
 
 [![Console TVFix Pro v3.1.3](https://img.youtube.com/vi/qD_iJ_4ARe4/maxresdefault.jpg)](https://www.youtube.com/watch?v=qD_iJ_4ARe4)
 
-*▶️ Haz clic en la imagen para ver el video en YouTube*
+*▶️ Click on the image to watch the video on YouTube*
 
 ---
 
