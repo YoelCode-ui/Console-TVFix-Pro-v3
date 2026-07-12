@@ -6,7 +6,9 @@
 
 > **Note**: This repository is **private**. The source code is not publicly available. This document describes the application's capabilities and usage.
 
-[![Console TVFix Pro v3.1.3](https://img.youtube.com/vi/qD_iJ_4ARe4/0.jpg)](https://www.youtube.com/watch?v=qD_iJ_4ARe4)
+[![Console TVFix Pro v3.1.3](https://img.youtube.com/vi/qD_iJ_4ARe4/maxresdefault.jpg)](https://www.youtube.com/watch?v=qD_iJ_4ARe4)
+
+*▶️ Haz clic en la imagen para ver el video en YouTube*
 
 ---
 
