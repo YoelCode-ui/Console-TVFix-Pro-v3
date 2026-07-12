@@ -25,19 +25,22 @@
 - **Continuous sending**: Automatically repeats commands or key presses (for example, `ENTER`) to force access to DEBUG modes during TV startup.
 
 ### 📚 Smart Command Management
-- **Predefined technology libraries**: One-click commands for the main motherboard and chipset families on the market, including:
-  - MSTAR
-  - REALTEK
-  - MEDIATEK (DTV and MT58XX)
-  - SONY DTV / MT58XX
-  - NUGGUET
-  - PANASONIC
-  - HISILICON
-  - AMLOGIC
-  - NOVATEK
-  - SAMSUNG
-  - HISENSE
-  - LG
+- **Predefined technology libraries**: One-click commands for the main motherboard and chipset families on the market, organized by support level:
+  - **Full support**
+    - ✅ MSTAR
+    - ✅ REALTEK
+    - ✅ MEDIATEK (DTV and MT58XX)
+    - ✅ SONY DTV / MT58XX
+    - ✅ NUGGUET
+    - ✅ PANASONIC
+    - ✅ HISILICON
+    - ✅ AMLOGIC
+  - **Partial support**
+    - 🟡 NOVATEK
+    - 🟡 SAMSUNG
+  - **No current support**
+    - ❌ HISENSE
+    - ❌ LG
 - **Smart color coding**: The interface automatically assigns a specific color to each technology for faster visual identification and fewer mistakes.
 - **Custom command editor**: Dedicated interface to create, edit, delete, and organize your own command sequences by technology.
 - **Recovery commands**: A dedicated tab for quick access to recovery modes on different platforms.
