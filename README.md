@@ -14,19 +14,22 @@
 
 ## ✨ Features
 
+### ⚡ High-Performance Terminal Engine
+Unlike standard terminal wrappers, Console TVFix Pro features a **custom-built, multi-threaded state machine** designed to handle massive UART data dumps without dropping bytes or freezing the UI.
+- **Modern xterm-256color / VT220 Compatibility**: Goes far beyond basic VT100. Fully supports 24-bit TrueColor, 256-color palettes, and complex SGR attributes (bold, italic, underline, strike, blink).
+- **Alternate Screen Buffers**: Native support for `CSI 1049` ensuring that TUI applications (like `nano`, `vi`, `htop`, or factory boot menus) render perfectly and exit cleanly without corrupting the scrollback history.
+- **Advanced Sequence Parsing**: Robust handling of CSI, OSC (dynamic window titles), DCS, and APC sequences, including modern xterm extensions like Scrollback Erase (`CSI 3 J`) and SGR stack pushing/popping.
+- **Optimized Rendering Pipeline**: Uses a lock-free ring buffer and a batched UI-sync queue (60 FPS) to smoothly render high-baud-rate traffic (up to 230,400 bps) without blocking the main thread.
+- **Smart Auto-Scroll & Search**: Intelligent tail-following that pauses when reviewing history, coupled with a real-time regex/text search engine with visual highlighting.
+- **Real-time telemetry (live meter)**: Dynamic visual indicators that monitor TX/RX activity instantly.
+- **Continuous sending**: Automatically repeats commands or key presses (for example, `ENTER`) to force access to DEBUG modes during TV startup.
+
 ### 🔌 Connectivity and Serial Communication
 - **Cross-platform support**: Fully compatible with Windows (x64) and Android (ARMv7/ARM64).
-- **Physical serial and OTG connections**: Connect to TVs through physical COM ports on Windows or via USB-OTG cables on Android.
+- **Native JNI Bridge**: Connect to TVs through physical COM ports on Windows or via USB-OTG cables on Android via custom C++ JNI wrappers for zero-latency USB-OTG communication.
 - **Bluetooth terminal**: Built-in support for wireless diagnostic connections via Bluetooth (Android only).
 - **Advanced port configuration**: Full control over connection parameters, including baud rates (from 1200 to 230400 bps), data bits (5 to 8), stop bits (1, 1.5, 2), and parity (None, Even, Odd, Mark, Space).
 - **Safe disconnect handling**: Smart toast-style notifications that immediately alert you to unexpected hardware disconnections.
-
-### 🖥️ Terminal Engine and Monitoring
-- **Advanced emulation**: Full compatibility with ANSI/VT100 standards and 256-color terminal output.
-- **Real-time telemetry (live meter)**: Dynamic visual indicators that monitor TX/RX activity instantly.
-- **Integrated search tool**: Search the terminal log in real time to quickly find errors or specific text strings.
-- **Smart auto-scroll control**: Auto-scroll disables automatically when the user scrolls up to review history, making reading easier.
-- **Continuous sending**: Automatically repeats commands or key presses (for example, `ENTER`) to force access to DEBUG modes during TV startup.
 
 ### 📚 Smart Command Management
 - **Predefined technology libraries**: One-click commands for the main motherboard and chipset families on the market, organized by support level:
