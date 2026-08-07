@@ -1,0 +1,8 @@
+{
+  "_schema": "ConsoleTVFixPro Revocation List",
+  "version": 1,
+  "updated_at": "2026-08-07T00:00:00Z",
+  "publisher": "YoelCode",
+  "notice": "This file contains revoked license IDs for Console TVFix Pro. Licenses listed here will be rejected by the application.",
+  "revoked": []
+}
