@@ -22,7 +22,7 @@
 - **Safe disconnect handling**: Smart toast-style notifications that immediately alert you to unexpected hardware disconnections.
 
 ### 🖥️ Terminal Engine and Monitoring
-- **Modern xterm-256color / VT220 Compatibility**: Goes far beyond basic VT100. Fully supports 24-bit TrueColor, 256-color palettes, and complex SGR attributes (bold, italic, underline, strike, blink).
+- **VT420-Compatible + xterm-extensions**: Goes far beyond basic VT100. Fully supports 24-bit TrueColor, 256-color palettes.
 - **Real-time telemetry (live meter)**: Dynamic visual indicators that monitor TX/RX activity instantly.
 - **Integrated search tool**: Search the terminal log in real time to quickly find errors or specific text strings.
 - **Smart auto-scroll control**: Auto-scroll disables automatically when the user scrolls up to review history, making reading easier.
