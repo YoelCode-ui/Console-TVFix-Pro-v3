@@ -1,147 +1,135 @@
 # Console TVFix Pro v3
 
-**Console TVFix Pro** is a premium, cross-platform application designed for advanced communication and diagnostics for Smart TVs through serial interfaces. Powered by a high-performance graphics engine and a modern interface, it provides a robust terminal environment, extensive command libraries for a wide range of chipset technologies, real-time telemetry, and commercial-grade security tools.
+**Console TVFix Pro v3** es una aplicación profesional multiplataforma diseñada para el diagnóstico avanzado, comunicación serial y reparación de Smart TVs. Impulsada por un motor gráfico de alto rendimiento y una interfaz moderna "Hi-Tech", proporciona un entorno de terminal robusto, librerías de comandos extensas para las principales tecnologías del mercado, telemetría en tiempo real y herramientas de seguridad de grado comercial.
 
-![User Interface](screenshot.png)
+> **Nota:** Este repositorio funciona como portal de releases, documentación y hoja de ruta. El código fuente es propietario y no está disponible públicamente.
+> 🌐 **Sitio Web Oficial:** [https://yoelcode-ui.github.io/YoelCode/](https://yoelcode-ui.github.io/YoelCode/)
 
-> **Note**: This repository is **private**. The source code is not publicly available. This document describes the application's capabilities and usage.
+[![Versión](https://img.shields.io/badge/Versión-v3.1.7-00E5FF?style=flat-square)]()
+[![Plataforma](https://img.shields.io/badge/Plataforma-Windows%20x64%20%7C%20Android-1A1D27?style=flat-square)]()
+[![Licencia](https://img.shields.io/badge/Licencia-Comercial%20(RSA--3072)-FF3D00?style=flat-square)]()
 
-[![Console TVFix Pro v3.1.3](https://raw.githubusercontent.com/YoelCode-ui/Console-TVFix-Pro-v3/main/video.png)](https://www.youtube.com/watch?v=qD_iJ_4ARe4)
-
-*▶️ Click on the image to watch the video on YouTube*
-
----
-
-## ✨ Features
-
-### 🔌 Connectivity and Serial Communication
-- **Cross-platform support**: Fully compatible with Windows (x64) and Android (ARMv7/ARM64).
-- **Physical serial and OTG connections**: Connect to TVs through physical COM ports on Windows or via USB-OTG cables on Android.
-- **Bluetooth terminal**: Built-in support for wireless diagnostic connections via Bluetooth (Android only).
-- **Advanced port configuration**: Full control over connection parameters, including baud rates (from 1200 to 230400 bps), data bits (5 to 8), stop bits (1, 1.5, 2), and parity (None, Even, Odd, Mark, Space).
-- **Safe disconnect handling**: Smart toast-style notifications that immediately alert you to unexpected hardware disconnections.
-
-### 🖥️ Terminal Engine and Monitoring
-- **VT420-Compatible + xterm-extensions**: Goes far beyond basic VT100. Fully supports 24-bit TrueColor, 256-color palettes.
-- **Real-time telemetry (live meter)**: Dynamic visual indicators that monitor TX/RX activity instantly.
-- **Integrated search tool**: Search the terminal log in real time to quickly find errors or specific text strings.
-- **Smart auto-scroll control**: Auto-scroll disables automatically when the user scrolls up to review history, making reading easier.
-- **Continuous sending**: Automatically repeats commands or key presses (for example, `ENTER`) to force access to DEBUG modes during TV startup.
-
-### 📚 Smart Command Management
-- **Predefined technology libraries**: One-click commands for the main motherboard and chipset families on the market, organized by support level:
-  - **Full support**
-    - ✅ MSTAR
-    - ✅ REALTEK
-    - ✅ MEDIATEK (DTV and MT58XX)
-    - ✅ SONY DTV / MT58XX
-    - ✅ NUGGUET
-    - ✅ PANASONIC
-    - ✅ HISILICON
-    - ✅ AMLOGIC
-  - **Partial support**
-    - 🟡 NOVATEK
-    - 🟡 SAMSUNG
-  - **No current support**
-    - ❌ HISENSE
-    - ❌ LG
-- **Smart color coding**: The interface automatically assigns a specific color to each technology for faster visual identification and fewer mistakes.
-- **Custom command editor**: Dedicated interface to create, edit, delete, and organize your own command sequences by technology.
-- **Recovery commands**: A dedicated tab for quick access to recovery modes on different platforms.
-- **Visual command tokenization**: The system recognizes and highlights escape sequences such as `\r`, `\n`, and `\t` inside command buttons so you know exactly which hexadecimal code will be sent.
-
-### 🎨 Adaptive Interface and Graphics Performance
-- **Fully responsive design**: The interface adapts dynamically whether you are on a large desktop display or a mobile device, intelligently adjusting panels, tab bars, and touch areas.
-- **Virtual keyboard handling**: On Android, the terminal automatically calculates the on-screen keyboard height to resize the reading area and avoid hiding important information.
-- **Performance control panel**: Fine-grained tuning that lets users balance visual polish against resource usage. It offers 5 profiles, from Maximum Performance to Maximum Quality, with the ability to enable or disable:
-  - Smooth animations and transitions
-  - Cursor blinking and visual attention effects
-  - Deep shadows and glow effects
-  - Dynamic recoloring of vector icons
-
-### 📂 Operation Logging
-- **Automatic log saving**: Configurable option to save all terminal traffic to timestamped log files automatically when disconnecting.
-- **Quick folder access**: Easily open the log folder from the graphical interface to audit repairs or share reports.
-
-### 🛡️ Security, Updates, and Localization
-- **Licensing and anti-debug protection**: Robust hardware-bound licensing mechanism (`serial.dat` and `license_for_user.dat`) with built-in protection against reverse engineering.
-- **OTA update manager**: The software automatically checks whether new versions are available on the server and offers direct downloads from inside the app (Windows).
-- **Real-time multilingual interface**: Available in English and Spanish, with a built-in language selector in the settings panel.
+<!-- Placeholder para video o imagen de demostración -->
+<!-- [▶️ Haz clic aquí para ver el video de demostración en YouTube](https://www.youtube.com/@yoelcode) -->
 
 ---
 
-## 📱 Compatible Hardware (Android OTG)
+## ✨ Características Principales
 
-When using **Android** with a USB-OTG adapter, the application includes native drivers compatible with a wide variety of USB-to-serial converters. Supported chipsets include:
+### 🔌 Conectividad y Comunicación Serial
+* **Multiplataforma:** Soporte nativo y optimizado para **Windows (x64)** y **Android (ARMv7/ARM64)**.
+* **Conexión Física y OTG:** Conéctate a TVs mediante puertos COM físicos en Windows o a través de cables USB-OTG en Android.
+* **Terminal Bluetooth:** Soporte integrado para conexiones de diagnóstico inalámbrico vía Bluetooth (exclusivo en Android).
+* **Configuración Avanzada:** Control total sobre baudios (1200 a 230400 bps), bits de datos, bits de parada y paridad.
+* **Manejo seguro de desconexiones:** Notificaciones inteligentes (tipo Toast) que alertan inmediatamente si el hardware se desconecta de forma inesperada.
 
-- **FTDI**: FT232R, FT232H, FT2232H, FT4232H, FT230X, FT231X, FT234XD
-- **Prolific**: PL2303
-- **Silicon Labs**: CP2102, CP210*
-- **WCH**: CH340, CH341A, CH9102
-- **CDC/ACM**: Arduino (ATmega32U4), Digispark (V-USB), Microchip MCP2221
+### 🖥️ Motor de Terminal (VT420 + Extensiones xterm)
+* **Más allá de VT100:** Soporte completo para **TrueColor (24-bit)**, paletas de 256 colores, operaciones rectangulares (VT420) y modo legado VT52.
+* **Telemetría en tiempo real (Live Meter):** Indicadores visuales dinámicos (TX/RX) que monitorean la actividad serial al instante.
+* **Búsqueda integrada:** Busca en el historial del log en tiempo real para encontrar errores o cadenas de texto específicas rápidamente.
+* **Exportación a HTML:** Exporta las sesiones de diagnóstico completas a archivos HTML con formato y colores para compartir reportes.
+* **Envío Continuo (Macro Injection):** Repite comandos o pulsaciones de teclas (como `ENTER` o `CTRL+C`) de forma automatizada para forzar el acceso a modos DEBUG durante el arranque de la TV.
 
----
+### 📚 Gestión Inteligente de Comandos
+* **Librerías Predefinidas:** Comandos de un solo clic organizados por familia de chipsets y nivel de soporte.
+* **Editor de Comandos Custom:** Interfaz dedicada para crear, editar y organizar tus propias secuencias de comandos (macros) con tokenización visual de escapes (`\r`, `\n`, `\xHH`).
+* **Modo Recovery:** Pestaña dedicada con rutinas de recuperación de sistema para diferentes plataformas.
 
-## 🖥️ Windows Requirements
-
-- Windows 10 (version 1809 or later) (x64)
-- Physical serial port or USB-to-serial adapter
-
----
-
-## 📲 Android Requirements
-
-- Android 9 (API 28) or later
-- USB-OTG cable or adapter for serial communication
-- Permissions automatically requested on first launch:
-  - Bluetooth
-  - Location (required by Android 12+ for Bluetooth discovery)
-  - External storage access (for logs and license files)
+### 🎨 Interfaz Adaptable y Rendimiento
+* **Diseño Responsivo:** La interfaz se adapta dinámicamente si estás en un monitor de escritorio o en un dispositivo móvil, ajustando paneles y áreas táctiles.
+* **Panel de Control de Rendimiento:** Ajuste fino que permite al usuario equilibrar el impacto visual y el uso de recursos. Incluye 5 perfiles (desde *Máximo Rendimiento* hasta *Máxima Calidad*) para activar/desactivar animaciones, sombras, brillos (glow) y parpadeos.
+* **Actualizaciones OTA:** El software verifica automáticamente si hay nuevas versiones en los Releases de GitHub y permite la descarga directa desde la app (Windows).
 
 ---
 
-## 🛠️ Quick Start
+## 🛡️ Nuevo Sistema de Licencias y Seguridad
 
-1. Launch the application.
-2. Open the Settings panel and choose the connection type (Serial or Bluetooth), then adjust baud rate, data bits, and parity according to the TV board you want to diagnose.
-3. Select the TV technology from the **Technologies** menu, or choose **Recovery** for boot utilities.
-4. Use the right-side panel to access:
-   - **Predefined**: Tested commands for the selected technology.
-   - **Custom**: Your own saved scripts and command sequences.
-   - **Recovery**: System recovery routines.
-5. Click any command to send it, or type manually in the bottom input field and press **Send**.
-6. Monitor the RX/TX meters in real time and use the search bar to find specific blocks of code in the terminal output.
+El sistema de licencias ha sido completamente rediseñado para ofrecer un modelo comercial seguro, offline y a prueba de manipulaciones.
+
+* **Criptografía RSA-3072:** Cada licencia está firmada digitalmente.
+* **Vinculación a Hardware (Hardware-Bound):** La licencia se ancla a la huella única de tu dispositivo (En Windows: Serial HDD, CPU ID, MAC, SMBIOS UUID. En Android: Widevine Device ID / Android ID).
+* **Activación Offline:** No requiere conexión permanente a internet. Generas una solicitud, la envías, y recibes tu licencia firmada.
+* **Lista de Revocación:** Verificación periódica contra una lista de revocación online para proteger el software ante uso no autorizado.
+* **Protección Anti-Debug y Anti-Tamper (Windows):** Sistema de puntuación con decaimiento que detecta depuradores (PEB, NtQueryInformationProcess, Hardware Breakpoints, Timing) y protege la integridad del ejecutable en memoria.
 
 ---
 
-## 🔒 Licensing and Installation
+## 📱 Hardware y Chipsets Soportados
 
-Console TVFix Pro is a **commercial application**. A valid license file (`license_for_user.dat`) is required to unlock its full capabilities.
+### Chipsets de Smart TVs (Librerías de Comandos)
+* ✅ **Soporte Completo:** MSTAR, REALTEK, MEDIATEK (DTV y MT58XX), SONY DTV / MT58XX, NUGGUET, PANASONIC, HISILICON, AMLOGIC.
+* 🟡 **Soporte Parcial:** NOVATEK, SAMSUNG.
+* *(Nota: MstarTool 3, disponible en nuestra web, cubre la edición profunda de dumps para Mstar).*
 
-1. On first launch, the system generates a unique fingerprint file named `serial.dat`.
-2. This file must be sent to the developer to generate the corresponding cryptographic license.
-3. Once the license is received, place it in the application's data directory to activate the software permanently.
-
----
-
-## 📞 Support and Contact
-
-For licensing, technical support, or feature requests, contact the developer:
-
-- **Yoel Romero H.** – 5356113984
-- **YouTube**: @yoelcode
-- **GitHub**: YoelCode-ui
+### Conversores USB-Serial Soportados (Android OTG)
+La aplicación incluye drivers nativos compatibles con los chips más comunes del mercado:
+* **FTDI:** FT232R, FT232H, FT2232H, FT4232H, FT230X, FT231X
+* **Prolific:** PL2303
+* **Silicon Labs:** CP2102, CP210*
+* **WCH:** CH340, CH341A, CH9102
+* **CDC/ACM:** Arduino, Digispark, Microchip MCP2221
 
 ---
 
-## ⚙️ Development Notes
+## 🖥️ Requisitos del Sistema
 
-- This repository serves only as a roadmap and release portal.
-- The source code is proprietary and is not publicly available.
-- All communication uses standard serial protocols. No proprietary hardware or external flashing boxes are required; a simple USB-to-TTL/Serial adapter is enough.
+**Windows:**
+* Windows 10 (versión 1809 o superior) / Windows 11 - **Solo 64 bits**.
+* Puerto serial físico o adaptador USB-to-Serial.
+
+**Android:**
+* Android 9 (API 28) o superior.
+* Cable o adaptador USB-OTG.
+* *Permisos:* Bluetooth, Ubicación (necesario en Android 12+ para escaneo BT) y Almacenamiento (para logs y licencias).
 
 ---
 
-## 📄 Copyright
+## 🚀 Guía Rápida de Uso
 
-© 2026 Console TVFix Pro – All rights reserved. Redistribution, reverse engineering, modification, or unauthorized use of this software is strictly prohibited.
+1. **Inicia la aplicación** y abre el panel de **Ajustes** (⚙️).
+2. Configura el tipo de conexión (Serial, Bluetooth u OTG) y ajusta el BaudRate (usualmente `115200`) según la placa de la TV.
+3. Selecciona la **Tecnología** de la TV en el menú lateral (ej. MSTAR, REALTEK) o elige *Recovery*.
+4. Usa el panel derecho para acceder a:
+   * **Predefinidos:** Comandos probados para la tecnología seleccionada.
+   * **Personalizados:** Tus propios scripts guardados.
+   * **Recovery:** Rutinas de rescate y bootloader.
+5. Haz clic en cualquier comando para enviarlo, o escribe manualmente en la barra inferior.
+6. Monitorea los medidores **RX/TX** en la barra superior y usa el buscador para analizar el log.
+
+---
+
+## 🔒 Proceso de Activación (Licencia Comercial)
+
+Console TVFix Pro es una aplicación comercial. Se requiere un archivo de licencia válido para desbloquear todas las capacidades. **(Se ofrece licencia de prueba gratuita por tiempo limitado solicitándola al soporte).**
+
+1. **Genera tu Solicitud:** Al abrir la app por primera vez, el sistema generará un texto con la huella única de tu hardware.
+2. **Envía la Solicitud:** Copia ese texto y envíalo al desarrollador por WhatsApp o Telegram.
+3. **Recibe tu Licencia:** Recibirás de vuelta un texto/archivo de licencia firmado criptográficamente.
+4. **Activa:** Importa la licencia en la aplicación (o pégala en la ventana de activación en Android) para desbloquear el software permanentemente en ese dispositivo.
+
+*¿Cambias de equipo? El sistema incluye una opción para generar un "Ticket de Desactivación" y transferir tu licencia.*
+
+---
+
+## 📞 Soporte y Contacto
+
+Para licencias, soporte técnico, reportar bugs o solicitar una **Licencia de Prueba Gratuita**, contacta directamente al desarrollador:
+
+* 👤 **Arquitecto del Sistema:** Yoel Romero H.
+* 📱 **WhatsApp / Telegram:** [+53 56113984](https://api.whatsapp.com/send?phone=5356113984&text=Hola%2C%20quiero%20información%20sobre%20Console%20TVFix%20Pro%20v3)
+* 🌐 **Sitio Web:** [yoelcode-ui.github.io/YoelCode](https://yoelcode-ui.github.io/YoelCode/)
+* 📺 **YouTube:** [@yoelcode](https://www.youtube.com/@yoelcode) (Tutoriales y demos)
+* 💬 **Comunidad de Telegram:** [Smart TV Mods Community](https://t.me/+jhrpO99SAy4wZDlh)
+
+---
+
+## ⚙️ Notas de Desarrollo
+
+* Este repositorio sirve únicamente como hoja de ruta y portal de releases.
+* No se requiere hardware propietario ni cajas de flasheo externas; un simple adaptador USB-to-TTL/Serial es suficiente.
+* Toda la comunicación utiliza protocolos serial estándar.
+
+## ⚖️ Copyright
+
+© 2026 **YoelCode** / Console TVFix Pro – Todos los derechos reservados.
+*La redistribución, ingeniería inversa, modificación, elusión de licencias o uso no autorizado de este software está estrictamente prohibido y perseguido por las leyes de propiedad intelectual.*
