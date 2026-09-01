@@ -5,7 +5,7 @@
 > **Nota:** Este repositorio funciona como portal de releases, documentación y hoja de ruta. El código fuente es propietario y no está disponible públicamente.
 > 🌐 **Sitio Web Oficial:** [https://yoelcode-ui.github.io/YoelCode/](https://yoelcode-ui.github.io/YoelCode/)
 
-[![Versión](https://img.shields.io/badge/Versión-v3.1.7-00E5FF?style=flat-square)]()
+[![Versión](https://img.shields.io/badge/Versión-v3.1.8-00E5FF?style=flat-square)]()
 [![Plataforma](https://img.shields.io/badge/Plataforma-Windows%20x64%20%7C%20Android-1A1D27?style=flat-square)]()
 [![Licencia](https://img.shields.io/badge/Licencia-Comercial%20(RSA--3072)-FF3D00?style=flat-square)]()
 
