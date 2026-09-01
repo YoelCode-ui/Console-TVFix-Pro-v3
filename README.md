@@ -24,7 +24,7 @@
 * **Manejo seguro de desconexiones:** Notificaciones inteligentes (tipo Toast) que alertan inmediatamente si el hardware se desconecta de forma inesperada.
 
 ### 🖥️ Motor de Terminal (VT420 + Extensiones xterm)
-* **Más allá de VT100:** Soporte completo para **TrueColor (24-bit)**, paletas de 256 colores, operaciones rectangulares (VT420) y modo legado VT52.
+* **TrueColor (24-bit)**, paletas de 256 colores, y modo legado VT52.
 * **Telemetría en tiempo real (Live Meter):** Indicadores visuales dinámicos (TX/RX) que monitorean la actividad serial al instante.
 * **Búsqueda integrada:** Busca en el historial del log en tiempo real para encontrar errores o cadenas de texto específicas rápidamente.
 * **Exportación a HTML:** Exporta las sesiones de diagnóstico completas a archivos HTML con formato y colores para compartir reportes.
@@ -49,7 +49,6 @@ El sistema de licencias ha sido completamente rediseñado para ofrecer un modelo
 * **Criptografía RSA-3072:** Cada licencia está firmada digitalmente.
 * **Vinculación a Hardware (Hardware-Bound):** La licencia se ancla a la huella única de tu dispositivo (En Windows: Serial HDD, CPU ID, MAC, SMBIOS UUID. En Android: Widevine Device ID / Android ID).
 * **Activación Offline:** No requiere conexión permanente a internet. Generas una solicitud, la envías, y recibes tu licencia firmada.
-* **Lista de Revocación:** Verificación periódica contra una lista de revocación online para proteger el software ante uso no autorizado.
 * **Protección Anti-Debug y Anti-Tamper (Windows):** Sistema de puntuación con decaimiento que detecta depuradores (PEB, NtQueryInformationProcess, Hardware Breakpoints, Timing) y protege la integridad del ejecutable en memoria.
 
 ---
