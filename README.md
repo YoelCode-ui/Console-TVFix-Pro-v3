@@ -5,9 +5,8 @@
 > **Nota:** Este repositorio funciona como portal de releases, documentación y hoja de ruta. El código fuente es propietario y no está disponible públicamente.
 > 🌐 **Sitio Web Oficial:** [https://yoelcode-ui.github.io/YoelCode/](https://yoelcode-ui.github.io/YoelCode/)
 
-[![Versión](https://img.shields.io/badge/Versión-v3.1.9-00E5FF?style=flat-square)]()
+[![Versión](https://img.shields.io/badge/Versión-v3.2.0-00E5FF?style=flat-square)]()
 [![Plataforma](https://img.shields.io/badge/Plataforma-Windows%20x64%20%7C%20Android-1A1D27?style=flat-square)]()
-[![Licencia](https://img.shields.io/badge/Licencia-Comercial%20(RSA--3072)-FF3D00?style=flat-square)]()
 
 <!-- Placeholder para video o imagen de demostración -->
 <!-- [▶️ Haz clic aquí para ver el video de demostración en YouTube](https://www.youtube.com/@yoelcode) -->
@@ -39,17 +38,6 @@
 * **Diseño Responsivo:** La interfaz se adapta dinámicamente si estás en un monitor de escritorio o en un dispositivo móvil, ajustando paneles y áreas táctiles.
 * **Panel de Control de Rendimiento:** Ajuste fino que permite al usuario equilibrar el impacto visual y el uso de recursos. Incluye 5 perfiles (desde *Máximo Rendimiento* hasta *Máxima Calidad*) para activar/desactivar animaciones, sombras, brillos (glow) y parpadeos.
 * **Actualizaciones OTA:** El software verifica automáticamente si hay nuevas versiones en los Releases de GitHub y permite la descarga directa desde la app (Windows).
-
----
-
-## 🛡️ Nuevo Sistema de Licencias y Seguridad
-
-El sistema de licencias ha sido completamente rediseñado para ofrecer un modelo comercial seguro, offline y a prueba de manipulaciones.
-
-* **Criptografía RSA-3072:** Cada licencia está firmada digitalmente.
-* **Vinculación a Hardware (Hardware-Bound):** La licencia se ancla a la huella única de tu dispositivo (En Windows: Serial HDD, CPU ID, MAC, SMBIOS UUID. En Android: Widevine Device ID / Android ID).
-* **Activación Offline:** No requiere conexión permanente a internet. Generas una solicitud, la envías, y recibes tu licencia firmada.
-* **Protección Anti-Debug y Anti-Tamper (Windows):** Sistema de puntuación con decaimiento que detecta depuradores (PEB, NtQueryInformationProcess, Hardware Breakpoints, Timing) y protege la integridad del ejecutable en memoria.
 
 ---
 
@@ -97,22 +85,9 @@ La aplicación incluye drivers nativos compatibles con los chips más comunes de
 
 ---
 
-## 🔒 Proceso de Activación (Licencia Comercial)
-
-Console TVFix Pro es una aplicación comercial. Se requiere un archivo de licencia válido para desbloquear todas las capacidades. **(Se ofrece licencia de prueba gratuita por tiempo limitado solicitándola al soporte).**
-
-1. **Genera tu Solicitud:** Al abrir la app por primera vez, el sistema generará un texto con la huella única de tu hardware.
-2. **Envía la Solicitud:** Copia ese texto y envíalo al desarrollador por WhatsApp o Telegram.
-3. **Recibe tu Licencia:** Recibirás de vuelta un texto/archivo de licencia firmado criptográficamente.
-4. **Activa:** Importa la licencia en la aplicación (o pégala en la ventana de activación en Android) para desbloquear el software permanentemente en ese dispositivo.
-
-*¿Cambias de equipo? El sistema incluye una opción para generar un "Ticket de Desactivación" y transferir tu licencia.*
-
----
-
 ## 📞 Soporte y Contacto
 
-Para licencias, soporte técnico, reportar bugs o solicitar una **Licencia de Prueba Gratuita**, contacta directamente al desarrollador:
+Para soporte técnico, reportar bugs, contacta directamente al desarrollador:
 
 * 👤 **Arquitecto del Sistema:** Yoel Romero H.
 * 📱 **WhatsApp / Telegram:** [+53 56113984](https://api.whatsapp.com/send?phone=5356113984&text=Hola%2C%20quiero%20información%20sobre%20Console%20TVFix%20Pro%20v3)
